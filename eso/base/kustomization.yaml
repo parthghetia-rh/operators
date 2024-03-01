@@ -3,5 +3,5 @@ kind: Kustomization
 resources:
   - externalSecret.yaml
   - operatorConfig.yaml
-  - ClusterSecretStore.yaml
+  - clusterSecretStore.yaml
   - subscription.yaml
