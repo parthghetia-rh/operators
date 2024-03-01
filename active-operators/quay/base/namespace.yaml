@@ -1,7 +1,10 @@
 apiVersion: project.openshift.io/v1
 kind: Project
 metadata:
+  annotations
   labels:
     argocd.argoproj.io/managed-by: openshift-gitops
   name: quay-registry
+  annotations:
+    argocd.argoproj.io/sync-wave: "-15"
 spec: {}
