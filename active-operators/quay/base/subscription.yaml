@@ -7,7 +7,6 @@ metadata:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
     argocd.argoproj.io/sync-wave: "-5"
 spec:
-spec:
   channel: latest
   installPlanApproval: Automatic
   name: quay-operator
