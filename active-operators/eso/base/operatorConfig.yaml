@@ -1,6 +1,9 @@
 apiVersion: operator.external-secrets.io/v1alpha1
 kind: OperatorConfig
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+    argocd.argoproj.io/sync-wave: "5"
   name: cluster
   namespace: openshift-operators
 spec:
