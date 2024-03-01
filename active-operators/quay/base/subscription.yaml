@@ -3,6 +3,10 @@ kind: Subscription
 metadata:
   name: quay-operator
   namespace: openshift-operators
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+    argocd.argoproj.io/sync-wave: "-5"
+spec:
 spec:
   channel: latest
   installPlanApproval: Automatic
