@@ -100,7 +100,7 @@ spec:
   serviceAccount:
     annotations:
       eks.amazonaws.com/audience: sts.amazonaws.com
-      eks.amazonaws.com/role-arn: arn:aws:iam::912144035479:role/eso-role
+      eks.amazonaws.com/role-arn: arn:aws:iam::924521267965:role/secrets-role-quay-playground
       eks.amazonaws.com/sts-regional-endpoints: 'true'
       eks.amazonaws.com/token-expiration: '86400'
     create: true
