@@ -5,7 +5,7 @@ metadata:
   namespace: openshift-migration
   annotations:
         argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
-        argocd.argoproj.io/sync-wave: "0"
+        argocd.argoproj.io/sync-wave: "-10"
 spec:
   targetNamespaces:
     - openshift-migration
