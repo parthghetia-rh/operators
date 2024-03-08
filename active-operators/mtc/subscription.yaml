@@ -14,4 +14,3 @@ spec:
   name: mtc-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
-  startingCSV: mtc-operator.v1.8.2
