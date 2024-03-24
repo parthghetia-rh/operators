@@ -2,6 +2,7 @@ apiVersion: triggers.tekton.dev/v1beta1
 kind: EventListener
 metadata:
   name: pipelines-demo-el
+  namespace: pipelines-demo
 spec:
   triggers:
     - name: python-sample
