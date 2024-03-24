@@ -2,6 +2,7 @@ apiVersion: tekton.dev/v1
 kind: Task
 metadata:
   name: apply-manifests
+  namespace: pipelines-demo
 spec:
   workspaces:
   - name: source
@@ -25,6 +26,7 @@ apiVersion: tekton.dev/v1
 kind: Task
 metadata:
   name: update-deployment
+  namespace: pipelines-demo
 spec:
   params:
     - name: deployment
