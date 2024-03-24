@@ -1,0 +1,12 @@
+apiVersion: triggers.tekton.dev/v1beta1
+kind: EventListener
+metadata:
+  name: pipelines-demo-el
+spec:
+  triggers:
+    - name: python-sample
+      bindings:
+        - ref: python-sample
+          kind: TriggerBinding
+      template:
+        ref: python-sample
