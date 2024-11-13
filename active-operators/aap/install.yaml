@@ -21,7 +21,7 @@ metadata:
   name: ansible-automation-platform
   namespace: ansible-automation-platform
 spec:
-  channel: patch-me
+  channel: stable
   installPlanApproval: Automatic
   name: ansible-automation-platform-operator
   source: redhat-operators
