@@ -5,7 +5,7 @@ metadata:
   namespace: openshift-operators
   annotations:
        argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
-       argocd.argoproj.io/sync-wave: "-5"
+       argocd.argoproj.io/sync-wave: "-25"
 spec:
   channel: stable
   installPlanApproval: Automatic
