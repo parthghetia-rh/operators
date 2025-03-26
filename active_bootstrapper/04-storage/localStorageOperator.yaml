@@ -4,6 +4,9 @@ kind: Subscription
 metadata:
   name: local-storage-operator
   namespace: openshift-local-storage
+  annotations:
+     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+     argocd.argoproj.io/sync-wave: "400"
 spec:
   channel: stable
   installPlanApproval: Automatic
@@ -16,6 +19,9 @@ kind: LocalVolume
 metadata:
   name: local-volume
   namespace: openshift-local-storage
+  annotations:
+     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+     argocd.argoproj.io/sync-wave: "401"
 spec:
   logLevel: Normal
   managementState: Managed
@@ -39,7 +45,9 @@ kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
   annotations:
-    storageclass.kubernetes.io/is-default-class: true
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+    argocd.argoproj.io/sync-wave: "400"
+    storageclass.kubernetes.io/is-default-class: "true"
   name: local-sc
   labels:
     local.storage.openshift.io/owner-name: local-volume
