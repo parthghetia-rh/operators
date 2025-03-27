@@ -12,7 +12,7 @@ spec:
     type: Service
   displayName: GitOps Plugin
   i18n:
-    loadType: PreLoad
+    loadType: Preload
   # proxy:
   # - alias: proxy
   #   authorization: UserToken
