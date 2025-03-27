@@ -48,7 +48,7 @@ metadata:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
     argocd.argoproj.io/sync-wave: "400"
     storageclass.kubernetes.io/is-default-class: "true"
-  name: local-sc
+  name: cluster-sc
   labels:
     local.storage.openshift.io/owner-name: local-volume
     local.storage.openshift.io/owner-namespace: openshift-local-storage
