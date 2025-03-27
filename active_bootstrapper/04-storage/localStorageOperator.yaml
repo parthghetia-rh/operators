@@ -36,7 +36,7 @@ spec:
               - control-plane-03
   storageClassDevices:
     - devicePaths:
-        - '/dev/disk/by-path/pci-0000:0b:00.0-nvme-2'
+        - '/dev/disk/by-id/nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_2'
       fsType: ext4
       storageClassName: local-sc
       volumeMode: Filesystem
