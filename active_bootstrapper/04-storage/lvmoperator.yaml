@@ -3,6 +3,9 @@ kind: Subscription
 metadata:
   name: lvms-operator
   namespace: openshift-storage
+  annotations:
+     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+     argocd.argoproj.io/sync-wave: "401"
 spec:
   channel: stable-4.18
   installPlanApproval: Automatic
@@ -15,6 +18,9 @@ kind: LVMCluster
 metadata:
   name: my-lvmcluster
   namespace: openshift-storage
+  annotations:
+     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+     argocd.argoproj.io/sync-wave: "402"
 spec:
   storage:
     deviceClasses:
