@@ -36,7 +36,7 @@ spec:
               - control-plane-03
   storageClassDevices:
     - devicePaths:
-        - '/dev/nvme0n2'
+        - '/dev/disk/by-path/pci-0000:0b:00.0-nvme-2'
       fsType: ext4
       storageClassName: local-sc
       volumeMode: Filesystem
