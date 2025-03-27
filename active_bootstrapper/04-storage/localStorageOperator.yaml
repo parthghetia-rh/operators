@@ -38,7 +38,7 @@ spec:
     - devicePaths:
         - '/dev/disk/by-path/pci-0000:0b:00.0-nvme-2'
       fsType: ext4
-      storageClassName: local-sc
+      storageClassName: cluster-sc
       volumeMode: Filesystem
 ---
 kind: StorageClass
