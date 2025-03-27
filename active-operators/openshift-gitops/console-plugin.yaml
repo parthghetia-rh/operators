@@ -1,20 +1,18 @@
 apiVersion: console.openshift.io/v1
 kind: ConsolePlugin
 metadata:
-  labels:
-    app: gitops-admin-plugin
-  name: gitops-admin-plugin
+  name: gitops-plugin
 spec:
   backend:
     service:
       basePath: /
-      name: gitops-admin-plugin
-      namespace: gitops-admin-plugin
-      port: 9443
+      name: gitops-plugin
+      namespace: openshift-gitops
+      port: 9001
     type: Service
-  displayName: GitOps Admin Plugin
+  displayName: GitOps Plugin
   i18n:
-    loadType: ""
+    loadType: PreLoad
   # proxy:
   # - alias: proxy
   #   authorization: UserToken
