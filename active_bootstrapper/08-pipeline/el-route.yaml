@@ -8,7 +8,7 @@ metadata:
   namespace: pipelines-demo
   annotations:
      argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
-     argocd.argoproj.io/sync-wave: "1105"
+     argocd.argoproj.io/sync-wave: "805"
 spec:
   port:
     targetPort: http-listener
